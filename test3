@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en-US' xml:lang='en-US'>
+
+<head>
+
+  <STYLE>
+    body {
+      /* for illustration only*/
+      margin: 0 auto;
+      /* center */
+      margin-top: 200px;
+      max-width: 640px;
+    }
+    /* below taken from https://stackoverflow.com/a/56401601/765271*/
+    
+    .click-zoom input[type=checkbox] {
+      display: none
+    }
+    
+    .click-zoom img {
+      transition: transform 0.25s ease;
+      cursor: zoom-in
+    }
+    
+    .click-zoom input[type=checkbox]:checked~img {
+      transform: scale(2);
+      cursor: zoom-out
+    }
+  </STYLE>
+</head>
+
+<body>
+
+  <div class='click-zoom'>
+    <label>
+      <input type='checkbox' />
+          <img src='img/230903_04_Splashpage.png' width="200">
+  </label>
+  </div>
+
+  <div class='click-zoom'>
+    <label>
+      <input type='checkbox' />
+          <img src='img/230903_04_Splashpage.png' width="200">
+  </label>
+  </div>
+
+</body>
+
+</html>
+
+
+
